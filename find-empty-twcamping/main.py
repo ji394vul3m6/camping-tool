@@ -70,7 +70,7 @@ def getDatas(id):
     data.append(row)
 
   headers = ['Date'] + names
-  return tabulate(data, headers=headers)
+  return tabulate(data, headers=headers, tablefmt="github")
 
 if len(sys.argv) < 2:
   print("Usage: python main.py <id>")
